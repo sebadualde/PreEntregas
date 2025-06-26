@@ -4,87 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BadBoy Ind</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="styles/estilos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="icon" href="logo-web.png">
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary h-25">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">BadBoy</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Remeras</a></li>
-            <li><a class="dropdown-item" href="#">Buzos</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Pantalones</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">BadBoy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-  </header>
+  </nav>
 
-  <main>
-    <!-- inicio de la pagina web -->
-    <section class="destacados">
-      <h2>DESTACADOS</h2>
-      <!-- 3 productos destacados -->
-      <div class="productos">
-        <div class="producto">
-          <img src="imagenes/Sweeter Gino (Choco).webp" alt="Sweater Gino Choco">
-          <p><strong>Sweater Gino (Choco) </strong></p>
-           <p><STRong>$35.000</STRong></p>
-            <P><STRong>$29.750 con Transferencia o depósito bancario.</STRong></P>
-             <h5>6 cuotas sin interés de $5.833,33</h5>
-              <button>Agregar al carrito</button>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container my-5">
+    <section class="text-center mb-4">
+      <h1>Bienvenidos a BadBoy Indumentaria Masculina</h1>
+      <h2 class="text-secondary">DESTACADOS</h2>
+      <p class="lead mt-3">
+        En BadBoy combinamos actitud, diseño y comodidad. Descubrí nuestra selección urbana con prendas únicas pensadas para vos. Nuestro compromiso es brindarte la mejor calidad y estilo en cada prenda.
+      </p>
+    </section>
+
+    <section class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagenes/Sweeter Gino (Choco).webp" class="card-img-top" alt="Sweater Gino Choco">
+          <div class="card-body">
+            <h5 class="card-title">Sweater Gino (Choco)</h5>
+            <p class="card-text">
+              <strong>$35.000</strong><br>
+              $29.750 con Transferencia o depósito bancario.<br>
+              6 cuotas sin interés de $5.833,33
+            </p>
+            <button class="btn btn-dark">Agregar al carrito</button>
+          </div>
         </div>
-        <div class="producto">
-          <img src="imagenes/baggy toronto.webp" alt="baggy toronto">
-          <p><strong>Baggy Toronto</strong></p>
-            <p><STrong>$55.000</STrong></p>
-              <P><STRong>$46.750 con Transferencia o depósito bancario.</STRong></P>
-               <h5>6 cuotas sin interés de $9.166,67</h5>
-                <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagenes/baggy toronto.webp" class="card-img-top" alt="Baggy Toronto">
+          <div class="card-body">
+            <h5 class="card-title">Baggy Toronto</h5>
+            <p class="card-text">
+              <strong>$55.000</strong><br>
+              $46.750 con Transferencia o depósito bancario.<br>
+              6 cuotas sin interés de $9.166,67
+            </p>
+            <button class="btn btn-dark">Agregar al carrito</button>
+          </div>
         </div>
-        <div class="producto">
-        <img src="imagenes/Hoodie-box-nat.webp" alt="Hoodie-box-nat">
-        <p><strong>Hoodie Boxy Fit (Natural)</strong></p>
-         <p><STRong>$62.000</STRong></p>
-            <P><STRong>$55.750 con Transferencia o depósito bancario.</STRong></P>
-              <h5>6 cuotas sin interés de $11.333,33</h5>
-                <button>Agregar al carrito</button>
-       </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagenes/Hoodie-box-nat.webp" class="card-img-top" alt="Hoodie Boxy Fit">
+          <div class="card-body">
+            <h5 class="card-title">Hoodie Boxy Fit (Natural)</h5>
+            <p class="card-text">
+              <strong>$62.000</strong><br>
+              $55.750 con Transferencia o depósito bancario.<br>
+              6 cuotas sin interés de $11.333,33
+            </p>
+            <button class="btn btn-dark">Agregar al carrito</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <!-- FOOTER -->
+  <footer class="text-center py-3 bg-dark text-white">
     <p>&copy; 2025 Bad Boy Indumentaria. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- JS DE BOOTSTRAP (RESPONSIVE NAVBAR FUNCIONAL) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
