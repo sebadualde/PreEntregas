@@ -7,29 +7,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #222;
+  background-color: #1a1a1a;
+  color: #f0e9ff;
   line-height: 1.6;
 }
 
-/* Banner */
-header {
-  background-image: url("../imagenes/Banner.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: black;
-  text-align: center;
-}
+
 
 /* Navegación */
 .navbar-nav .nav-link.active {
-  background-color: #343a40;
+  background-color: #9966bd;
   border-radius: 0.25rem;
 }
 
@@ -43,7 +30,7 @@ header {
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #002f4b;
+  color: #dcd0ff;
   text-align: center;
   margin: 40px 0 20px 0;
   text-transform: uppercase;
@@ -53,7 +40,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-style: italic;
-  color: #6b7280;
+  color: #a98adb;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -62,13 +49,26 @@ section p.lead {
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
-  color: #444;
+  color: #e0d4f7;
+}
+
+section.text-center {
+  background-color: #2b2b2b;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+section ul.list-inline {
+  background-color: #3a2e4d;
+  padding: 15px 10px;
+  border-radius: 8px;
 }
 
 /* Categorías */
 .lista-productos li {
   padding: 0.5rem 1rem;
-  background-color: #e9ecef;
+  background-color: #6a0dad;
+  color: white;
   border-radius: 0.25rem;
   margin: 0.3rem;
   font-weight: 500;
@@ -77,33 +77,40 @@ section p.lead {
 }
 
 .lista-productos:hover {
-  background-color: #ccc;
+  background-color: #7d3cff;
   cursor: pointer;
 }
 
-/* Productos */
+/* Botón personalizado */
+.btn-badboy {
+  background-color: #350358;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.btn-badboy:hover {
+  background-color: #7d3cff;
+}
+
+/* Card */
+.card {
+  border: none;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #dcd0ff;
 }
 
 .card-text {
   font-size: 0.95rem;
-}
-
-.btn-dark {
-  background-color: #002f4b;
-  border: none;
-}
-
-.btn-dark:hover {
-  background-color: #005f8d;
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
+  color: #e3daf7;
 }
 
 .card img {
@@ -114,7 +121,7 @@ section p.lead {
 /* Footer */
 footer {
   background-color: #321325;
-  color: white;
+  color: #f8e7ff;
   font-size: 14px;
   padding: 15px 0;
   text-align: center;
@@ -126,19 +133,22 @@ footer {
 form label {
   display: block;
   margin: 10px 0 5px;
+  color: #e5d2ff;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 7px;
-  border: 1px solid #ccc;
+  background-color: #1f1f1f;
+  color: #f5eaff;
+  border: 1px solid #6a0dad;
   border-radius: 4px;
 }
 
 form button {
   margin-top: 15px;
-  background-color: #002f4b;
+  background-color: #6a0dad;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -147,26 +157,18 @@ form button {
 }
 
 form button:hover {
-  background-color: #005f8d;
+  background-color: #7d3cff;
 }
 
 /* Info contacto */
-.info-contacto ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.info-contacto ul li {
-  margin: 5px 0;
+.info-contacto {
+  background-color: #2e1f39;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .info-contacto ul li a {
-  color: #002f4b;
-  text-decoration: none;
-}
-
-.info-contacto ul li a:hover {
-  text-decoration: underline;
+  color: #c5a4f7;
 }
 
 /* Responsive */
