@@ -7,16 +7,29 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
-  color: #f0e9ff;
+  background-color: #f5f5f5;
+  color: #222;
   line-height: 1.6;
 }
 
-
+/* Banner */
+header {
+  background-image: url("../imagenes/Banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  text-align: center;
+}
 
 /* Navegación */
 .navbar-nav .nav-link.active {
-  background-color: #9966bd;
+  background-color: #343a40;
   border-radius: 0.25rem;
 }
 
@@ -30,7 +43,7 @@ body {
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #dcd0ff;
+  color: #002f4b;
   text-align: center;
   margin: 40px 0 20px 0;
   text-transform: uppercase;
@@ -40,7 +53,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-style: italic;
-  color: #a98adb;
+  color: #6b7280;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -49,26 +62,13 @@ section p.lead {
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
-  color: #e0d4f7;
-}
-
-section.text-center {
-  background-color: #2b2b2b;
-  padding: 40px 20px;
-  border-radius: 10px;
-}
-
-section ul.list-inline {
-  background-color: #3a2e4d;
-  padding: 15px 10px;
-  border-radius: 8px;
+  color: #444;
 }
 
 /* Categorías */
 .lista-productos li {
   padding: 0.5rem 1rem;
-  background-color: #6a0dad;
-  color: white;
+  background-color: #e9ecef;
   border-radius: 0.25rem;
   margin: 0.3rem;
   font-weight: 500;
@@ -77,40 +77,33 @@ section ul.list-inline {
 }
 
 .lista-productos:hover {
-  background-color: #7d3cff;
+  background-color: #ccc;
   cursor: pointer;
 }
 
-/* Botón personalizado */
-.btn-badboy {
-  background-color: #350358;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
-
-.btn-badboy:hover {
-  background-color: #7d3cff;
-}
-
-/* Card */
-.card {
-  border: none;
-  border-radius: 5px;
-  background-color: #2b2b2b;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
+/* Productos */
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #dcd0ff;
 }
 
 .card-text {
   font-size: 0.95rem;
-  color: #e3daf7;
+}
+
+.btn-dark {
+  background-color: #002f4b;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #005f8d;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .card img {
@@ -121,7 +114,7 @@ section ul.list-inline {
 /* Footer */
 footer {
   background-color: #321325;
-  color: #f8e7ff;
+  color: white;
   font-size: 14px;
   padding: 15px 0;
   text-align: center;
@@ -133,22 +126,19 @@ footer {
 form label {
   display: block;
   margin: 10px 0 5px;
-  color: #e5d2ff;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 7px;
-  background-color: #1f1f1f;
-  color: #f5eaff;
-  border: 1px solid #6a0dad;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 form button {
   margin-top: 15px;
-  background-color: #6a0dad;
+  background-color: #002f4b;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -157,18 +147,26 @@ form button {
 }
 
 form button:hover {
-  background-color: #7d3cff;
+  background-color: #005f8d;
 }
 
 /* Info contacto */
-.info-contacto {
-  background-color: #2e1f39;
-  padding: 30px;
-  border-radius: 10px;
+.info-contacto ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-contacto ul li {
+  margin: 5px 0;
 }
 
 .info-contacto ul li a {
-  color: #c5a4f7;
+  color: #002f4b;
+  text-decoration: none;
+}
+
+.info-contacto ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
