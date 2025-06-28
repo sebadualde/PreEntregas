@@ -1,0 +1,22 @@
+.card {
+  border: none;
+  border-radius: 5px;
+  background-color: $color-card;
+  @include box-shadow(0, 4px, 8px, rgba(0, 0, 0, 0.3));
+
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $color-acento;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: lighten($color-claro, 10%);
+  }
+}

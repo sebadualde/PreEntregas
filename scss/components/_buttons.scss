@@ -1,0 +1,17 @@
+%btn-base {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-badboy {
+  @extend %btn-base;
+  background-color: $color-boton;
+  color: white;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}

@@ -1,0 +1,19 @@
+footer {
+  background-color: $color-footer;
+  color: lighten($color-claro, 10%);
+  font-size: 14px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  margin-top: 30px;
+}
+
+.info-contacto {
+  background-color: $color-card;
+  padding: 30px;
+  border-radius: 10px;
+
+  ul li a {
+    color: lighten($color-acento2, 10%);
+  }
+}

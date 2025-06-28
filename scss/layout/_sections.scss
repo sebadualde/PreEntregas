@@ -1,0 +1,39 @@
+section {
+  &.text-center {
+    background-color: darken($color-fondo, 5%);
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  p.lead {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: $color-acento;
+  }
+
+  ul.list-inline {
+    background-color: $color-card;
+    padding: 15px 10px;
+    border-radius: 8px;
+  }
+}
+
+.lista-productos {
+  li {
+    padding: 0.5rem 1rem;
+    background-color: $color-principal;
+    color: white;
+    border-radius: 0.25rem;
+    margin: 0.3rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+    cursor: pointer;
+  }
+}
+

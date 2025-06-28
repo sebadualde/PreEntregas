@@ -1,0 +1,14 @@
+.navbar-nav {
+  .nav-link.active {
+    background-color: lighten($color-principal, 10%);
+    border-radius: 0.25rem;
+  }
+
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
